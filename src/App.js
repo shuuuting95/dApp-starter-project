@@ -4,6 +4,7 @@ import './App.css'
 import { ethers } from 'ethers'
 /* ABIファイルを含むWavePortal.jsonファイルをインポートする*/
 import abi from './utils/WavePortal.json'
+import WAVE_PORTAL from './constants/addresses'
 
 const App = () => {
   /* ユーザーのパブリックウォレットを保存するために使用する状態変数を定義 */
@@ -14,7 +15,7 @@ const App = () => {
   const [allWaves, setAllWaves] = useState([])
   console.log('currentAccount: ', currentAccount)
   /* デプロイされたコントラクトのアドレスを保持する変数を作成 */
-  const contractAddress = '0x2D708ff66866F9D866054db059606D74A6fE7E84'
+  const contractAddress = WAVE_PORTAL
   /* コントラクトからすべてのwavesを取得するメソッドを作成 */
   /* ABIの内容を参照する変数を作成 */
   const contractABI = abi.abi
