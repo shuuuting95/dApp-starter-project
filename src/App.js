@@ -4,7 +4,7 @@ import './App.css'
 import { ethers } from 'ethers'
 /* ABIファイルを含むWavePortal.jsonファイルをインポートする*/
 import abi from './utils/WavePortal.json'
-import WAVE_PORTAL from './constants/addresses'
+import { WAVE_PORTAL } from './constants/addresses'
 
 const App = () => {
   /* ユーザーのパブリックウォレットを保存するために使用する状態変数を定義 */
